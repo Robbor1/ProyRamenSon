@@ -13,6 +13,7 @@
     --color-pink: #f21c57;
     ---color-pink-light: #f6a6b8;
     --color-yellow-orange: #f6d500;
+    --color-orange: #FF4C00;
     --color-aqua: #1ca1ab;
     --color-white-base: #f2f2f2;
     --color-white-hover: #b4b4b4;
@@ -231,14 +232,31 @@ li.perfil ul.dropdown li a {
 #ramen {
     font-size: 100px;
     color: #ca335f;
+    transition: all 0.3s ease;
 }
+#ramen:hover {
+    color: #ff1f5e;
+    transition: all 0.3s ease;
+}
+
 #son {
     font-size: 100px;
     color: #caa12d;
+    transition: all 0.3s ease;
 }
+#son:hover {
+    color: #f6d500;
+    transition: all 0.3s ease;
+}
+
 #n {
     font-size: 100px;
     color: #be420c;
+    transition: all 0.3s ease;
+}
+#n:hover {
+    color: #ff5810;
+    transition: all 0.3s ease;
 }
 
 .btnInfo {
@@ -252,16 +270,41 @@ li.perfil ul.dropdown li a {
 .btnInfo:hover {
     background-color: rgb(255, 255, 255);
     border: 1px solid rgba(0,0, 0, 1);
+    transition: all 0.3s ease;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
 }
 
 /*  */
 
+.destacados {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 0;
+}
+
 .destacados h1.tittle {
     text-align: center;
-    padding: 50px 0;
+    padding-bottom: 50px;
     font-size: 25px;
     font-weight: 600;
     color: var(--color-aqua);
+}
+
+button.btn-masProductos {
+    background-color: var(--color-orange);
+    color: var(--color-white);
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    transition: all 0.3s ease;
+}
+
+button.btn-masProductos:hover {
+    color: var(--color-black);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
 }
 
 .destacados-container {
@@ -296,13 +339,18 @@ li.perfil ul.dropdown li a {
 
 .card-item img:hover {
     transform: scale(1.05);
-    filter: drop-shadow(1px  1px 20px rgba(0, 0, 0, 0.4));
+    filter: drop-shadow(1px  1px 20px rgba(0, 0, 0, 0.3));
     transition: all 0.3s ease;
 }
 
 .card-item h2 {
     font-size: 20px;
     color: var(--color-black);
+}
+
+.card-item h2:hover {
+    color: var(--color-aqua);
+    transition: all 0.3s ease;
 }
 
 .card-item .item-description p {
@@ -332,11 +380,45 @@ li.perfil ul.dropdown li a {
     border: none;
 }
 
+.btn-container button.btnCarrito {
+    background-color: var(--color-pink);
+    color: var(--color-white);
+}
+
 .btn-container button:hover {
-    background-color: var(--color-white-hover);
+    background-color: var(--color-white);
     box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
     cursor: pointer;
     transition: all 0.3s ease;
 }
 
+.btn-container button.btnCarrito:hover {
+    background-color: var(--color-yellow-orange);
+    color: var(--color-black);
+    transition: all 0.3s ease;
+}
+
+/*  */
+
+.categorias {
+    background-color: var(--color-aqua);
+    height: 600px;
+    padding: 50px 0;
+}
+
+.categorias h1.tittle {
+    text-align: center;
+    font-size: 25px;
+    font-weight: 600;
+    color: var(--color-white);
+}
+
+.categorias-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 60px;
+    padding-top: 50px;
+}
 
