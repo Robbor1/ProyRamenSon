@@ -284,8 +284,11 @@ li.perfil ul.dropdown li a {
 }
 
 .destacados h1.tittle {
+    border: #1ca1ab solid 3px;
+    border-radius: 20px;
+    padding: 10px;
+    margin-bottom: 50px;
     text-align: center;
-    padding-bottom: 50px;
     font-size: 25px;
     font-weight: 600;
     color: var(--color-aqua);
@@ -402,12 +405,19 @@ button.btn-masProductos:hover {
 
 .categorias {
     background-color: var(--color-aqua);
-    height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
     padding: 50px 0;
 }
 
 .categorias h1.tittle {
+    border: #fff solid 3px;
+    border-radius: 20px;
+    padding: 10px;
     text-align: center;
+    margin-bottom: 50px;
     font-size: 25px;
     font-weight: 600;
     color: var(--color-white);
@@ -415,10 +425,50 @@ button.btn-masProductos:hover {
 
 .categorias-container {
     display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 100px;
+    padding-bottom: 50px;
+}
+
+.prod-container {
+    display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     flex-wrap: wrap;
-    gap: 60px;
-    padding-top: 50px;
 }
+
+.category-bubble {
+    background-color: var(--color-white);
+    border-radius: 50%;
+    width: 350px;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.category-bubble:hover {
+    transform: scale(1.05);
+    filter: drop-shadow(1px  1px 20px rgba(255, 255, 255));
+    transition: all 0.3s ease;
+}
+
+.category-bubble img {
+    width: 70%;
+}
+
+.prod-container h2 {
+    font-size: 30px;
+    color: var(--color-white);
+    font-weight: 600;
+    margin: 50px 0;
+    padding: 10px;
+    border-bottom: #fff solid 4px;
+}
+
+
+
+
 
