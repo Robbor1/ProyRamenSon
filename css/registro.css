@@ -1,0 +1,78 @@
+* {
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.fondo-container {
+  background-image: url(/img/fc2.jpg);
+  background-size: cover;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+
+.login {
+  background-color: rgba(242,242,242,.5);
+  justify-content: center;
+  text-align: center;
+  font-size: 10px;
+  width: 350px;
+  padding: 30px 40px;
+  border-radius: 15px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.50);
+
+}
+
+form input[type="text"], form input[type="email"], 
+form input[type="password"] {
+  display: block;
+  margin-bottom: 15px;
+  border: 2px solid #cecece;
+  border-radius: 5px;
+  padding: 10px 15px;
+  font-size: 14px;
+  color: #a4a4a4;
+  width: 100%;
+  margin-bottom: 15px;
+  border-radius: 12px;
+}
+
+form input[type="text"]:hover, form input[type="email"]:hover, 
+form input[type="password"]:hover {
+  border: 2px solid #ffa400;
+}
+
+button {
+  background: #f21c57;
+  color: #fff;
+  border: none;
+  border-radius: 16px;
+  padding: 10px;
+  width: 100%;
+  font-size: 14px;
+  display: block;
+  margin-bottom: 15px; 
+  }
+  
+button:hover {
+  background: #ff446d;
+  cursor: pointer;  }
+  
+a {
+  color: #ffa400;
+  margin-top: 10px;
+  font-size: 14px;
+  margin-top: 15px;
+  text-decoration: none;
+}
+a:hover{
+  color: #1ca1ab;
+}
