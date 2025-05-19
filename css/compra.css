@@ -197,9 +197,170 @@ li.perfil ul.dropdown li a {
     transform: translateZ(0);
 }
 
-/* ---------  -------------- */
 
 
+/* ----------- SECCIÓN COMPRA ----------- */
+
+.section-compra {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 80vh;
+    background-color: var(--color-white-base);
+    padding: 40px 0;
+}
+
+.compra-container {
+    background: var(--color-white);
+    box-shadow: 0 2px 16px rgba(0,0,0,0.12);
+    border-radius: 12px;
+    padding: 32px 40px;
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+    max-width: 900px;
+    width: 100%;
+}
+
+.producto-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+    min-width: 260px;
+    max-width: 320px;
+}
+
+.producto-img {
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+    background: #fff;
+}
+
+.producto-detalles {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+}
+
+.producto-nombre {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--color-black);
+}
+
+.producto-precio {
+    font-size: 1.2rem;
+    color: var(--color-orange);
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.producto-detalles label {
+    font-size: 1rem;
+    color: var(--color-black);
+    margin-bottom: 2px;
+}
+
+.producto-detalles input[type="number"] {
+    width: 60px;
+    padding: 4px 8px;
+    border: 1px solid var(--color-aqua);
+    border-radius: 4px;
+    font-size: 1rem;
+    outline: none;
+    margin-left: 8px;
+}
+
+/* Formulario de envío */
+.datos-envio {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    min-width: 260px;
+    flex: 1;
+}
+
+.datos-envio h3 {
+    font-size: 1.2rem;
+    color: var(--color-aqua);
+    margin-bottom: 8px;
+    font-weight: 700;
+}
+
+.datos-envio label {
+    font-size: 1rem;
+    color: var(--color-black);
+    margin-bottom: 2px;
+}
+
+.datos-envio input[type="text"],
+.datos-envio input[type="tel"] {
+    padding: 8px 10px;
+    border: 1px solid var(--color-border-search-bar);
+    border-radius: 4px;
+    font-size: 1rem;
+    background: var(--color-white-base);
+    margin-bottom: 6px;
+    transition: border-color 0.2s;
+}
+
+.datos-envio input:focus {
+    border-color: var(--color-aqua);
+}
+
+.btn-pagar {
+    margin-top: 12px;
+    padding: 12px 0;
+    background: var(--color-pink);
+    color: var(--color-white);
+    border: none;
+    border-radius: 6px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s, box-shadow 0.2s;
+    box-shadow: 0 2px 8px rgba(242,28,87,0.08);
+}
+
+.btn-pagar:hover {
+    background: var(--color-orange);
+    box-shadow: 0 4px 16px rgba(255,76,0,0.12);
+}
+
+.datos-envio input[type="number"] {
+    padding: 8px 10px;
+    border: 1px solid var(--color-border-search-bar);
+    border-radius: 4px;
+    font-size: 1rem;
+    background: var(--color-white-base);
+    margin-bottom: 6px;
+    transition: border-color 0.2s;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .compra-container {
+        flex-direction: column;
+        align-items: center;
+        padding: 24px 10px;
+        gap: 24px;
+    }
+    .producto-info, .datos-envio {
+        min-width: 200px;
+        width: 100%;
+    }
+    .producto-img {
+        width: 160px;
+        height: 160px;
+    }
+}
 
 
 
