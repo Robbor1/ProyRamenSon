@@ -1,14 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ProyectoRamenSon</title>
-
-    <!-- Styles -->
-    <link rel="stylesheet" href="./css/styles.css">
-
-    <!-- BoxIconos -->
+    <title>Categorías de Ramen - RamenSon</title>
+    <link rel="stylesheet" href="./css/categorias.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
     <!-- GoogleIcons -->
@@ -21,11 +18,11 @@
 
     <!-- Fontawesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
 </head>
+
 <body>
-    <div class="fondo-container">
-        <header>
+
+    <header>
             <a class="logo" href="#"><img src="img/logo1.png" alt="logo"></a>
             <nav>
                 <ul class="navlinks">
@@ -48,42 +45,25 @@
                             <li><button type="button">Comprar</button></li>
                         </ul>
                     </li>
-                    <li class="perfil"><a href="#"><button><img src="img/iconPerfil.png" class="foto-usuario-chica"></a>
+                    <li class="perfil"><a href="#"><button><i class='bx bx-user'></i></button></a>
                         <ul class="dropdown">
-                            <li><a href="perfil.html">Mi perfil</a></li>
-                            <li><a href="index.html">Cerrar sesión</a></li>
-
+                            <li><a href="login.html">Iniciar Sesión</a></li>
+                            <li><a href="registro.html">Registrarse</a></li>
                         </ul>
                     </li>
                 </ul>
             </div>
         </header>
 
-        <section class="hero">
-            <div class="hero-container">
-                <div class="hero-text">
-                    <div class="ramenson">
-                        <h1 id="ramen">RAMEN</h1>
-                        <h1 id="son">SO</h1>
-                        <h1 id="n">N</h1>
-                        <img class="gatitoLogo" src="img/gatitoLogo.png" alt="">
-                    </div>
-                    <p>¡El mejor lugar para encontrar el ramen que buscas!</p>
-                    <a href="informacion.html" class="btnInfo">SABER MÁS</a>
-                </div>
-            </div>
-        </section>
-    </div>
-
-    <section class="destacados">
-        <h1 class="tittle">PRODUCTOS DESTACADOS</h1>
+     <section class="categorias">
+        <h1 class="tittle">CATEGORIA DE CUP</h1>
         <div class="destacados-container">
             <div class="card-item">
-                <img src="img/pack/buldak-multi-carbonara.png" alt="Ramen 1">
-                <a href="#"><h2>Ramen Buldak Carbonara</h2></a>
+                <img src="Img/cup/buldak-cup-2x-spicy.png" alt="Ramen 1">
+                <a href="#"><h2>Ramen Buldak cup spicy</h2></a>
                 <div class="item-description">
                     <p id="precio">$225.00</p>
-                    <p>Paquete de 5 bolsas de ramen Buldak Carbonara de 130g</p>
+                    <p>Paquete de 5 bolsas de ramen Buldak cup spicy de 130g</p>
                 </div>
                 <div class="btn-container">
                     <button class="btnComprar">Comprar</button>
@@ -91,11 +71,11 @@
                 </div>
             </div>
             <div class="card-item">
-                <img src="img/pack/buldak-multi-cream-carbonara.png" alt="Ramen 1">
-                <a href="#"><h2>Ramen Buldak Cream Carbonara</h2></a>
+                <img src="Img/cup/buldak-cup-carbonara.png" alt="Ramen 1">
+                <a href="#"><h2>Ramen Buldak cup carbonara</h2></a>
                 <div class="item-description">
                     <p id="precio">$250.00</p>
-                    <p>Paquete de 5 bolsas de ramen Buldak Cream Carbonara de 140g</p>
+                    <p>Paquete de 5 bolsas de ramen Buldak cup carbonara de 140g</p>
                 </div>
                 <div class="btn-container">
                     <button class="btnComprar">Comprar</button>
@@ -103,42 +83,64 @@
                 </div>
             </div>
             <div class="card-item">
-                <img src="img/pack/buldak-multi-original.png" alt="Ramen 1">
-                <a href="#"><h2>Ramen Buldak Original</h2></a>
+                <img src="Img/cup/buldak-cup-cheese.png" alt="Ramen 1">
+                <a href="#"><h2>Ramen Buldak cup Cheese</h2></a>
                 <div class="item-description">
                     <p id="precio">$180.00</p>
-                    <p>Paquete de 5 bolsas de ramen Buldak Original de 140g</p>
+                    <p>Paquete de 5 bolsas de ramen Buldak cup Cheese de 140g</p>
                 </div>
                 <div class="btn-container">
                     <button class="btnComprar">Comprar</button>
                     <button class="btnCarrito">Agregar al carrito</button>
                 </div>
             </div>
-            
-        </div>
-        <a href="#"><button class="btn-masProductos">Más productos</button></a>
-    </section>
-
-    <section class="categorias">
-        <h1 class="tittle"> CATEGORÍAS</h1>
-        <div class="categorias-container">
-            <div class="prod-container">
-                <div class="category-bubble">
-                    <img src="img/pack/buldak-multi-original.png" alt="">
+            <div class="card-item">
+                <img src="Img/cup/buldak-cup-original.png" alt="Ramen 1">
+                <a href="#"><h2>Ramen Buldak cup original</h2></a>
+                <div class="item-description">
+                    <p id="precio">$235.00</p>
+                    <p>Paquete de 5 bolsas de ramen Buldak cup original de 130g</p>
                 </div>
-                <h2 class="label">Paquete</h2>
+                <div class="btn-container">
+                    <button class="btnComprar">Comprar</button>
+                    <button class="btnCarrito">Agregar al carrito</button>
+                </div>
             </div>
-            <div class="prod-container">
-                <div class="category-bubble">
-                    <img src="img/bowl/buldak-big-bowl-cheese.png" alt="">
+            <div class="card-item">
+                <img src="Img/cup/samyang-cup-korean-gomtang.png" alt="Ramen 1">
+                <a href="#"><h2>Ramen samyang cup korean gomtang</h2></a>
+                <div class="item-description">
+                    <p id="precio">$180.00</p>
+                    <p>Paquete de 5 bolsas de ramen samyang cup korean gomtang de 140g</p>
                 </div>
-                <h2 class="label">Bowl</h2>
+                <div class="btn-container">
+                    <button class="btnComprar">Comprar</button>
+                    <button class="btnCarrito">Agregar al carrito</button>
+                </div>
             </div>
-            <div class="prod-container">
-                <div class="category-bubble">
-                    <img src="img/cup/buldak-cup-carbonara.png" alt="">
+            <div class="card-item">
+                <img src="Img/cup/samyang-cup-vegetasty.png" alt="Ramen 1">
+                <a href="#"><h2>Ramen samyang cup vegetasty</h2></a>
+                <div class="item-description">
+                    <p id="precio">$200.00</p>
+                    <p>Paquete de 5 bolsas de ramen samyang cup vegetasty de 140g</p>
                 </div>
-                <h2 class="label">Cup</h2>
+                <div class="btn-container">
+                    <button class="btnComprar">Comprar</button>
+                    <button class="btnCarrito">Agregar al carrito</button>
+                </div>
+            </div>
+            <div class="card-item">
+                <img src="Img/cup/samyang-cup-original.png" alt="Ramen 1">
+                <a href="#"><h2>Ramen samyang cup original</h2></a>
+                <div class="item-description">
+                    <p id="precio">$180.00</p>
+                    <p>Paquete de 5 bolsas de ramen samyang cup original de 140g</p>
+                </div>
+                <div class="btn-container">
+                    <button class="btnComprar">Comprar</button>
+                    <button class="btnCarrito">Agregar al carrito</button>
+                </div>
             </div>
         </div>
     </section>
@@ -176,6 +178,8 @@
         </div>
     </footer>
 
+    <script src="js/menu.js"></script>
 
 </body>
+
 </html>
